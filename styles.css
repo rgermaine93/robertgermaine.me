@@ -74,6 +74,8 @@ body {
     background: #22c55e;
     margin: 20px auto;
     border-radius: 8px;
+    display: block;
+    transform-origin: center center;
 }
 
 .gradient-green {

@@ -52,19 +52,31 @@
             <button type="submit" class="submit-button">Send Message</button>
         </form>
     </div>
-    <script src="gsap.min.js"></script>
+    <script src="js/gsap.min.js"></script>
 
     <script>
-        // Wait for DOM to load
-        document.addEventListener("DOMContentLoaded", function() {
-            // Animate the green box
-            gsap.to(".box", {
-                rotation: 360,
-                duration: 2,
-                repeat: -1,
-                ease: "none"
-            });
-        });
+        // Wait for GSAP library to be available
+        function initGSAPAnimation() {
+            if (typeof gsap !== 'undefined' && gsap.to) {
+                // Animate the green box with rotation
+                gsap.to(".box", {
+                    rotation: 360,
+                    duration: 2,
+                    repeat: 10,
+                    ease: "none"
+                });
+            } else {
+                // Retry if GSAP hasn't loaded yet
+                setTimeout(initGSAPAnimation, 50);
+            }
+        }
+        
+        // Start animation when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initGSAPAnimation);
+        } else {
+            initGSAPAnimation();
+        }
     </script>
 </body>
 </html>
