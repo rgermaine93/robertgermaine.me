@@ -18,6 +18,9 @@
         </div>
     </nav>
     <div class="box gradient-green"></div>
+    <h1 id="welcome-text" class="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
+      Welcome To My Journey
+    </h1>
     <div class="container">
         <form class="contact-form">
             <h1 class="form-title">Contact me</h1>
@@ -53,11 +56,15 @@
         </form>
     </div>
     <script src="js/gsap.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
 
     <script>
-        // Wait for GSAP library to be available
+        // Wait for both GSAP and SplitText to be available
         function initGSAPAnimation() {
-            if (typeof gsap !== 'undefined' && gsap.to) {
+            if (typeof gsap !== 'undefined' && gsap.to && typeof SplitText !== 'undefined') {
+                // Register SplitText plugin
+                gsap.registerPlugin(SplitText);
+
                 // Animate the green box with rotation
                 gsap.to(".box", {
                     rotation: 360,
@@ -65,8 +72,28 @@
                     repeat: 10,
                     ease: "none"
                 });
+
+                // Animate the welcome text with SplitText
+                const welcomeText = document.getElementById("welcome-text");
+                if (welcomeText) {
+                    let split = SplitText.create(welcomeText, {
+                        type: "chars,words",
+                        charsClass: "char",
+                        wordsClass: "word"
+                    });
+
+                    // Animate each character
+                    gsap.from(split.chars, {
+                        opacity: 0,
+                        y: 50,
+                        rotationX: -90,
+                        duration: 0.8,
+                        stagger: 0.02,
+                        ease: "back.out(1.7)"
+                    });
+                }
             } else {
-                // Retry if GSAP hasn't loaded yet
+                // Retry if libraries haven't loaded yet
                 setTimeout(initGSAPAnimation, 50);
             }
         }
