@@ -84,12 +84,9 @@
 
                     // Animate each character
                     gsap.from(split.chars, {
-                        opacity: 0,
-                        y: 50,
-                        rotationX: -90,
-                        duration: 0.8,
-                        stagger: 0.02,
-                        ease: "back.out(1.7)"
+                        y: 100,
+                        autoAlpha: 0,
+                        stagger: 0.05
                     });
                 }
             } else {
