@@ -10,6 +10,64 @@ body {
     min-height: 100vh;
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #FFF;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #000;
+    background: #f5f5f5;
+}
+
+.nav-link.active {
+    color: #007AFF;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background: #007AFF;
+    border-radius: 50%;
+}
+
 .container {
     display: flex;
     width: 1440px;
@@ -132,6 +190,10 @@ body {
         width: 100%;
         padding: 24px 120px;
     }
+    
+    .nav-container {
+        padding: 0 120px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -139,12 +201,32 @@ body {
         padding: 24px 60px;
         min-height: 100vh;
     }
+    
+    .nav-container {
+        padding: 0 60px;
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         padding: 24px 32px;
         gap: 48px;
+    }
+    
+    .nav-container {
+        padding: 0 32px;
+        height: 56px;
+    }
+    
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding: 6px 12px;
     }
     
     .contact-form {
@@ -160,6 +242,24 @@ body {
     .container {
         padding: 16px;
         gap: 32px;
+    }
+    
+    .nav-container {
+        padding: 0 16px;
+        height: 56px;
+    }
+    
+    .nav-links {
+        gap: 12px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding: 6px 8px;
+        flex: 1;
+        text-align: center;
     }
     
     .contact-form {
