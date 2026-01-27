@@ -131,6 +131,10 @@ body {
     text-wrap: balance;
 }
 
+#welcome-text {
+    color: #FFFFFF;
+}
+
 /* SplitText character styles */
 .char {
     display: inline-block;
