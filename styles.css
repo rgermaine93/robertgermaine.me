@@ -278,7 +278,7 @@ body {
     align-items: center;
     gap: 86px;
     margin: 0 auto;
-    background: #FFF;
+    background: transparent;
 }
 
 .contact-form {
