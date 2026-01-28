@@ -195,6 +195,21 @@ body {
     transition-duration: 0.2s;
 }
 
+.nav-cta {
+    display: inline-flex;
+    height: 56px;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border: 1px solid #548CFF;
+    background: #0054FF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 @media (min-width: 1024px) {
     .lg\:flex {
         display: flex;
