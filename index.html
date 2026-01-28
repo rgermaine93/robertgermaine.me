@@ -9,16 +9,26 @@
 <body>
     <div class="background-beams" aria-hidden="true"></div>
     <div class="page-content">
-    <nav class="navbar effect">
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="#resume" class="nav-link">Resume</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link active">Contact</a>
-            </div>
+    <div class="z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-white px-4 py-2 lg:flex dark:bg-neutral-950 sticky inset-x-0 top-40">
+        <a class="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black" href="/">
+            <img alt="logo" width="30" height="30" src="https://assets.aceternity.com/logo-dark.png">
+            <span class="font-medium text-black dark:text-white">DevStudio</span>
+        </a>
+        <div class="hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2">
+            <nav class="relative flex justify-center space-x-4 rounded-full bg-white px-4 py-3 dark:bg-neutral-950">
+                <div class="relative">
+                    <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9] dark:text-neutral-300">Services</p>
+                </div>
+                <div class="relative">
+                    <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9] dark:text-neutral-300">Products</p>
+                </div>
+                <div class="relative">
+                    <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9] dark:text-neutral-300">Pricing</p>
+                </div>
+            </nav>
         </div>
-    </nav>
+        <button class="hidden rounded-full bg-black px-8 py-2 text-sm font-bold text-white shadow-[0px_-2px_0px_0px_rgba(255,255,255,0.4)_inset] md:block dark:bg-white dark:text-black">Book a call</button>
+    </div>
     <h1 id="welcome-text" class="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
       Humans were created to create.
     </h1>
