@@ -90,6 +90,26 @@ body {
     width: 100%;
 }
 
+.max-w-md {
+    max-width: 28rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+    gap: 16px;
+}
+
+.resize-none {
+    resize: none;
+}
+
 .max-w-7xl {
     max-width: 80rem;
 }
@@ -193,6 +213,133 @@ body {
 
 .duration-200 {
     transition-duration: 0.2s;
+}
+
+/* Field demo styles */
+.field-demo {
+    margin: 0 auto 40px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    backdrop-filter: blur(6px);
+}
+
+.field-form {
+    width: 100%;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field-set {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.field-legend {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.field-description {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.field-separator {
+    height: 1px;
+    background: #e5e7eb;
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.field-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #fff;
+    color: #111827;
+}
+
+.field-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.field-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+}
+
+.field-textarea {
+    min-height: 96px;
+}
+
+.field-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #2563eb;
+}
+
+.field-horizontal {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.field-actions {
+    justify-content: flex-start;
+}
+
+.field-button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #2563eb;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.field-button:hover {
+    background: #1d4ed8;
+}
+
+.field-button-outline {
+    background: transparent;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+.field-button-outline:hover {
+    background: #f9fafb;
 }
 
 .nav-cta {
