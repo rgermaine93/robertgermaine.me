@@ -32,7 +32,147 @@
     <h1 id="welcome-text" class="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
       Humans were created to create.
     </h1>
+    <section class="w-full relative overflow-hidden contact-section">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#00C5FF] to-transparent opacity-50"></div>
+        
+        <div class="relative z-10 py-12 px-4 md:px-8">
+            <div class="max-w-md mx-auto">
+                <div class="text-center space-y-4 mb-12">
+                    <div class="border border-[#0054ff] rounded-[14px] p-2 w-fit mx-auto">
+                        <p class="font-['Rubik'] font-normal text-[10px] text-[#0054ff] text-center tracking-[-0.2px]">
+                            GET IN TOUCH
+                        </p>
+                    </div>
+
+                    <h2 class="font-['Rubik'] font-semibold text-[40px] md:text-[48px] leading-[1.2] text-[#1e1e1e] tracking-[-0.96px]">
+                        Take the Big Leap
+                    </h2>
+
+                    <p class="font-['Rubik'] font-normal text-[16px] leading-[1.4] text-[#1e1e1e]">
+                        Let's talk about turning your next idea into something real.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
+                        <input 
+                            type="text" 
+                            placeholder="Name"
+                            class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
+                        />
+                    </div>
+
+                    <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
+                        <input 
+                            type="email" 
+                            placeholder="Email"
+                            class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
+                        />
+                    </div>
+
+                    <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
+                        <input 
+                            type="text" 
+                            placeholder="Subject"
+                            class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
+                        />
+                    </div>
+
+                    <div class="bg-white border border-[#e1e3e8] rounded-lg h-[163px] p-4">
+                        <textarea 
+                            placeholder="Message"
+                            class="w-full h-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none resize-none"
+                        ></textarea>
+                    </div>
+
+                    <button class="bg-[#0054ff] border border-[#548cff] w-full h-14 rounded-xl flex items-center justify-center text-white font-['Rubik'] font-medium text-[16px] hover:bg-[#0046d9] transition-colors">
+                        Send Message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container">
+        <div class="field-demo w-full max-w-md">
+            <form class="field-form">
+                <div class="field-group">
+                    <fieldset class="field-set">
+                        <legend class="field-legend">Payment Method</legend>
+                        <p class="field-description">All transactions are secure and encrypted</p>
+                        <div class="field-group">
+                            <div class="field">
+                                <label class="field-label" for="checkout-7j9-card-name-43j">Name on Card</label>
+                                <input class="field-input" id="checkout-7j9-card-name-43j" placeholder="Evil Rabbit" required>
+                            </div>
+                            <div class="field">
+                                <label class="field-label" for="checkout-7j9-card-number-uw1">Card Number</label>
+                                <input class="field-input" id="checkout-7j9-card-number-uw1" placeholder="1234 5678 9012 3456" required>
+                                <p class="field-description">Enter your 16-digit card number</p>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="field">
+                                    <label class="field-label" for="checkout-exp-month-ts6">Month</label>
+                                    <select class="field-input field-select" id="checkout-exp-month-ts6">
+                                        <option value="">MM</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label class="field-label" for="checkout-7j9-exp-year-f59">Year</label>
+                                    <select class="field-input field-select" id="checkout-7j9-exp-year-f59">
+                                        <option value="">YYYY</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label class="field-label" for="checkout-7j9-cvv">CVV</label>
+                                    <input class="field-input" id="checkout-7j9-cvv" placeholder="123" required>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="field-separator"></div>
+                    <fieldset class="field-set">
+                        <legend class="field-legend">Billing Address</legend>
+                        <p class="field-description">The billing address associated with your payment method</p>
+                        <div class="field-group">
+                            <div class="field field-horizontal">
+                                <input class="field-checkbox" id="checkout-7j9-same-as-shipping-wgm" type="checkbox" checked>
+                                <label class="field-label font-normal" for="checkout-7j9-same-as-shipping-wgm">Same as shipping address</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field-set">
+                        <div class="field-group">
+                            <div class="field">
+                                <label class="field-label" for="checkout-7j9-optional-comments">Comments</label>
+                                <textarea class="field-input field-textarea resize-none" id="checkout-7j9-optional-comments" placeholder="Add any additional comments"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="field field-horizontal field-actions">
+                        <button class="field-button" type="submit">Submit</button>
+                        <button class="field-button field-button-outline" type="button">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
         <form class="contact-form">
             <h1 class="form-title">Contact me</h1>
             <p class="form-description">Contact me and I'll get back to you as soon as possible.</p>
