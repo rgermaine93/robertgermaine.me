@@ -7,120 +7,21 @@
     <link rel="stylesheet" href="site.css" />
   </head>
   <body>
-    <section class="hero">
+    <section class="hero-animated">
       <div class="hero-inner">
-        <div class="hero-header">
-          <div class="hero-pill">
-            <span class="pill-dot"></span>
-            <span class="pill-text">new block in 10 days</span>
-          </div>
-          <h1 class="hero-title">A Subscription build to fuel your Growth</h1>
-          <p class="hero-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="hero-cta">
-          <button class="btn-primary">Get Your Now</button>
-          <button class="btn-ghost">
-            <span class="play-icon" aria-hidden="true">
-              <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1.11523 3.94458C1.11523 2.36225 2.86573 1.40657 4.19675 2.26222L12.4982 7.59889C13.7229 8.38617 13.7229 10.1763 12.4982 10.9636L4.19675 16.3003C2.86573 17.1559 1.11523 16.2003 1.11523 14.6179V3.94458Z"
-                  fill="black"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </span>
-            How it works
-          </button>
-          <div class="bg-pattern pattern-left" aria-hidden="true"></div>
-          <div class="bg-pattern pattern-right" aria-hidden="true"></div>
-          <div class="bg-line line-left" aria-hidden="true"></div>
-          <div class="bg-line line-left-alt" aria-hidden="true"></div>
-          <div class="bg-line line-right" aria-hidden="true"></div>
-          <div class="bg-line line-right-alt" aria-hidden="true"></div>
-        </div>
-
-        <div class="hero-chart">
-          <div class="chart-card">
-            <div id="chart-bars" class="chart-bars" aria-hidden="true"></div>
-            <div class="chart-xaxis" id="chart-xaxis"></div>
-          </div>
-        </div>
-
-        <div class="hero-rule">
-          <div class="bg-pattern pattern-left" aria-hidden="true"></div>
-          <div class="bg-pattern pattern-right" aria-hidden="true"></div>
+        <img
+          src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar/cool-dude.jpg"
+          alt="avatar"
+          class="hero-avatar"
+        />
+        <h3 class="hero-heading">
+          Hello, I'm Marcus, a Seattle based visual designer shaping memorable brand identities.
+        </h3>
+        <div class="hero-actions">
+          <a class="hero-link hero-link-outline" href="https://www.shadcnblocks.com">See my work</a>
+          <a class="hero-link" href="https://www.shadcnblocks.com">Let's collaborate</a>
         </div>
       </div>
     </section>
-
-    <script>
-      const chartData = [
-        { date: "2024-04-01", views: 372 },
-        { date: "2024-04-02", views: 277 },
-        { date: "2024-04-03", views: 287 },
-        { date: "2024-04-04", views: 502 },
-        { date: "2024-04-05", views: 663 },
-        { date: "2024-04-06", views: 641 },
-        { date: "2024-04-07", views: 425 },
-        { date: "2024-04-08", views: 729 },
-        { date: "2024-04-09", views: 169 },
-        { date: "2024-04-10", views: 451 },
-        { date: "2024-04-11", views: 677 },
-        { date: "2024-04-12", views: 502 },
-        { date: "2024-04-13", views: 722 },
-        { date: "2024-04-14", views: 357 },
-        { date: "2024-04-15", views: 290 },
-        { date: "2024-04-16", views: 328 },
-        { date: "2024-04-17", views: 806 },
-        { date: "2024-04-18", views: 774 },
-        { date: "2024-04-19", views: 423 },
-        { date: "2024-04-20", views: 239 },
-        { date: "2024-04-21", views: 337 },
-        { date: "2024-04-22", views: 394 },
-        { date: "2024-04-23", views: 368 },
-        { date: "2024-04-24", views: 677 },
-        { date: "2024-04-25", views: 465 },
-        { date: "2024-04-26", views: 205 },
-        { date: "2024-04-27", views: 803 },
-        { date: "2024-04-28", views: 302 },
-        { date: "2024-04-29", views: 555 },
-        { date: "2024-04-30", views: 834 },
-        { date: "2024-05-01", views: 385 },
-        { date: "2024-05-02", views: 603 },
-        { date: "2024-05-03", views: 437 },
-        { date: "2024-05-04", views: 805 },
-        { date: "2024-05-05", views: 871 },
-        { date: "2024-05-06", views: 1018 },
-        { date: "2024-05-07", views: 688 },
-        { date: "2024-05-08", views: 359 },
-        { date: "2024-05-09", views: 407 },
-      ];
-
-      const chartBars = document.getElementById("chart-bars");
-      const chartAxis = document.getElementById("chart-xaxis");
-
-      if (chartBars && chartAxis) {
-        const max = Math.max(...chartData.map((d) => d.views));
-        chartBars.innerHTML = chartData
-          .map((d) => {
-            const height = Math.max(6, Math.round((d.views / max) * 100));
-            return `<div class="chart-bar" style="height:${height}%"></div>`;
-          })
-          .join("");
-
-        const ticks = chartData.filter((_, i) => i % 6 === 0);
-        chartAxis.innerHTML = ticks
-          .map((d) => {
-            const date = new Date(d.date);
-            const label = date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-            return `<span class="chart-tick">${label}</span>`;
-          })
-          .join("");
-      }
-    </script>
   </body>
 </html>
