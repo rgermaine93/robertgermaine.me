@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var k = "kartee-theme";
+        var t = localStorage.getItem(k);
+        var h = document.documentElement;
+        h.classList.remove("light", "dark");
+        if (t === "dark") h.classList.add("dark");
+        else if (t === "light") h.classList.add("light");
+      })();
+    </script>
     <title>Hero</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,6 +62,33 @@
             </div>
 
             <div class="navbar-meta" aria-live="polite">
+              <div class="theme-toggle" title="Color theme">
+                <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2" />
+                    <path d="M12 20v2" />
+                    <path d="m4.93 4.93 1.41 1.41" />
+                    <path d="m17.66 17.66 1.41 1.41" />
+                    <path d="M2 12h2" />
+                    <path d="M20 12h2" />
+                    <path d="m6.34 17.66-1.41 1.41" />
+                    <path d="m19.07 4.93-1.41 1.41" />
+                  </svg>
+                </span>
+                <label class="theme-switch">
+                  <input type="checkbox" id="theme-toggle-input" role="switch" aria-label="Dark mode" />
+                  <span class="theme-switch-track" aria-hidden="true">
+                    <span class="theme-switch-thumb"></span>
+                  </span>
+                </label>
+                <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                  </svg>
+                </span>
+              </div>
+              <span class="navbar-meta-sep">/</span>
               <span class="font-medium">Greenville, SC</span>
               <span class="navbar-meta-sep">/</span>
               <span class="navbar-meta-time" data-nav-time>—</span>
@@ -126,6 +163,32 @@
             <a href="#contact">Contact</a>
           </nav>
           <div class="nav-mobile-footer">
+            <div class="theme-toggle theme-toggle-mobile" title="Color theme">
+              <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </span>
+              <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle-input-mobile" role="switch" aria-label="Dark mode" />
+                <span class="theme-switch-track" aria-hidden="true">
+                  <span class="theme-switch-thumb"></span>
+                </span>
+              </label>
+              <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>
+              </span>
+            </div>
             <div class="font-medium">Greenville, SC</div>
             <div class="navbar-meta-time" data-nav-time>—</div>
           </div>
@@ -133,6 +196,7 @@
       </div>
     </div>
 
+    <script src="js/theme.js" defer></script>
     <script src="js/nav.js" defer></script>
   </body>
 </html>
