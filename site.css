@@ -4,6 +4,145 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background: #ffffff;
+  color: #111827;
+  min-height: 100vh;
+}
+
+.hero-animated {
+  padding: 128px 0;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.hero-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  object-fit: cover;
+  animation: fade-scale 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.hero-heading {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 720px;
+  animation: slide-up 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 32px;
+  background: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  overflow: hidden;
+  position: relative;
+  animation: button-rise 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  transform: translateY(100px);
+  animation-delay: 0.7s;
+}
+
+.hero-link-outline {
+  background: transparent;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  animation-delay: 0.4s;
+}
+
+.hero-link::before,
+.hero-link::after {
+  content: attr(href);
+  position: absolute;
+  opacity: 0;
+}
+
+.hero-link span {
+  display: block;
+}
+
+.hero-link:hover {
+  background: #1f2937;
+}
+
+.hero-link-outline:hover {
+  background: #f3f4f6;
+}
+
+@keyframes fade-scale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes button-rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 40px;
+  }
+  .hero-avatar {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-link,
+  .hero-link-outline {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --muted: #e5e7eb;
   --muted-foreground: #6b7280;
