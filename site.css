@@ -245,15 +245,19 @@ html.dark .navbar-logo {
 .nav-link-animated {
   position: relative;
   display: inline-block;
-  height: 1.5rem;
+  /* Taller clip box so a thick underline isn’t clipped by overflow */
+  height: 2rem;
   overflow: hidden;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--muted-foreground);
+  line-height: 1.5rem;
+  /* Clear idle vs hover on any background */
+  color: color-mix(in oklch, var(--foreground) 68%, transparent);
   text-decoration: none;
 }
 
-.nav-link-animated:hover {
+.nav-link-animated:hover,
+.nav-link-animated:focus-visible {
   color: var(--foreground);
 }
 
@@ -269,16 +273,21 @@ html.dark .navbar-logo {
   width: 100%;
   display: block;
   color: var(--foreground);
-  border-bottom: 1px solid var(--primary);
+  line-height: 1.5rem;
+  /* Strong underline: thick + full-opacity accent (reads on dark + grid) */
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 0.125rem;
   transform: translateY(100%);
   transition: transform 0.3s ease;
 }
 
-.nav-link-animated:hover .nav-link-label {
+.nav-link-animated:hover .nav-link-label,
+.nav-link-animated:focus-visible .nav-link-label {
   transform: translateY(-100%);
 }
 
-.nav-link-animated:hover .nav-link-hover {
+.nav-link-animated:hover .nav-link-hover,
+.nav-link-animated:focus-visible .nav-link-hover {
   transform: translateY(0);
 }
 
