@@ -17,6 +17,64 @@
       <!-- Top fade + dashed grid (BackgroundPattern22) -->
       <div class="bg-pattern-22" aria-hidden="true"></div>
       <div class="pattern-placeholder" aria-hidden="true"></div>
+
+      <header class="nav-section">
+        <nav class="navbar-22" aria-label="Main navigation">
+          <div class="navbar-inner">
+            <a class="navbar-brand" href="/">
+              <img
+                class="navbar-logo"
+                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
+                width="32"
+                height="32"
+                alt=""
+              />
+              <span class="navbar-title">Shadcnblocks.com</span>
+            </a>
+
+            <div class="navbar-links-desktop">
+              <a class="nav-link-animated" href="#">
+                <span class="nav-link-label">Home</span>
+                <span class="nav-link-hover" aria-hidden="true">Home</span>
+              </a>
+              <a class="nav-link-animated" href="#about">
+                <span class="nav-link-label">About</span>
+                <span class="nav-link-hover" aria-hidden="true">About</span>
+              </a>
+              <a class="nav-link-animated" href="#pricing">
+                <span class="nav-link-label">Pricing</span>
+                <span class="nav-link-hover" aria-hidden="true">Pricing</span>
+              </a>
+              <a class="nav-link-animated" href="#contact">
+                <span class="nav-link-label">Contact</span>
+                <span class="nav-link-hover" aria-hidden="true">Contact</span>
+              </a>
+            </div>
+
+            <div class="navbar-meta" aria-live="polite">
+              <span class="font-medium">Greenville, SC</span>
+              <span class="navbar-meta-sep">/</span>
+              <span class="navbar-meta-time" data-nav-time>—</span>
+            </div>
+
+            <button
+              type="button"
+              class="nav-menu-toggle"
+              id="nav-menu-toggle"
+              aria-expanded="false"
+              aria-controls="nav-mobile-panel"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+              <span class="sr-only">Open menu</span>
+            </button>
+          </div>
+        </nav>
+      </header>
+
       <div class="hero-animated">
         <div class="hero-inner">
           <img
@@ -34,5 +92,47 @@
         </div>
       </div>
     </section>
+
+    <div
+      class="nav-mobile-panel"
+      id="nav-mobile-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menu"
+      aria-hidden="true"
+    >
+      <div class="nav-mobile-panel-wrap">
+        <button type="button" class="nav-mobile-close" id="nav-mobile-close" aria-label="Close menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="nav-mobile-inner">
+          <a class="nav-mobile-brand" href="/">
+            <img
+              class="navbar-logo"
+              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
+              width="32"
+              height="32"
+              alt=""
+            />
+            <span>Shadcnblocks.com</span>
+          </a>
+          <nav class="nav-mobile-links" aria-label="Mobile">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="nav-mobile-footer">
+            <div class="font-medium">Greenville, SC</div>
+            <div class="navbar-meta-time" data-nav-time>—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/nav.js" defer></script>
   </body>
 </html>
