@@ -1,386 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="site.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="background-beams" aria-hidden="true"></div>
     <div class="page-content">
-    <div class="z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-white px-4 py-2 lg:flex dark:bg-neutral-950 sticky inset-x-0 top-40">
-        <a class="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black" href="/">
-            <img alt="logo" width="30" height="30" src="https://assets.aceternity.com/logo-dark.png">
-            <span class="font-medium text-black dark:text-white">DevStudio</span>
+      <div
+        class="z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-white px-4 py-2 lg:flex sticky inset-x-0 top-40 nav-shell"
+      >
+        <a
+          class="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+          href="/"
+        >
+          <img
+            alt="logo"
+            width="30"
+            height="30"
+            src="https://assets.aceternity.com/logo-dark.png"
+          />
+          <span class="font-medium text-black">DevStudio</span>
         </a>
-        <div class="hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2">
-            <nav class="relative flex justify-center space-x-4 rounded-full bg-white px-4 py-3 dark:bg-neutral-950">
-                <div class="relative">
-                    <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9] dark:text-neutral-300">Services</p>
-                </div>
-                <div class="relative">
-                    <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9] dark:text-neutral-300">Products</p>
-                </div>
-                <div class="relative">
-                    <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9] dark:text-neutral-300">Pricing</p>
-                </div>
-            </nav>
+        <div
+          class="hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2"
+        >
+          <nav class="relative flex justify-center space-x-4 rounded-full bg-white px-4 py-3">
+            <div class="relative">
+              <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9]">
+                Services
+              </p>
+            </div>
+            <div class="relative">
+              <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9]">
+                Products
+              </p>
+            </div>
+            <div class="relative">
+              <p class="cursor-pointer text-neutral-700 hover:opacity-[0.9]">
+                Pricing
+              </p>
+            </div>
+          </nav>
         </div>
         <button class="hidden nav-cta md:block">Book a call</button>
-    </div>
-    <h1 id="welcome-text" class="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
-      Humans were created to create.
-    </h1>
-    <section class="w-full relative overflow-hidden contact-section">
+      </div>
+
+      <section class="background-pattern">
+        <div class="background-pattern-grid" aria-hidden="true"></div>
+        <div class="pattern-placeholder">
+          <div class="pattern-card">
+            <div class="pattern-dot"></div>
+            <div class="pattern-lines">
+              <div class="pattern-line"></div>
+              <div class="pattern-line short"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h1
+        id="welcome-text"
+        class="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance"
+      >
+        Humans were created to create.
+      </h1>
+
+      <section class="w-full relative overflow-hidden contact-section">
         <div class="absolute inset-0 bg-gradient-to-b from-[#00C5FF] to-transparent opacity-50"></div>
-        
         <div class="relative z-10 py-12 px-4 md:px-8">
-            <div class="max-w-md mx-auto">
-                <div class="text-center space-y-4 mb-12">
-                    <div class="border border-[#0054ff] rounded-[14px] p-2 w-fit mx-auto">
-                        <p class="font-['Rubik'] font-normal text-[10px] text-[#0054ff] text-center tracking-[-0.2px]">
-                            GET IN TOUCH
-                        </p>
-                    </div>
-
-                    <h2 class="font-['Rubik'] font-semibold text-[40px] md:text-[48px] leading-[1.2] text-[#1e1e1e] tracking-[-0.96px]">
-                        Take the Big Leap
-                    </h2>
-
-                    <p class="font-['Rubik'] font-normal text-[16px] leading-[1.4] text-[#1e1e1e]">
-                        Let's talk about turning your next idea into something real.
-                    </p>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
-                        <input 
-                            type="text" 
-                            placeholder="Name"
-                            class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
-                        />
-                    </div>
-
-                    <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
-                        <input 
-                            type="email" 
-                            placeholder="Email"
-                            class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
-                        />
-                    </div>
-
-                    <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
-                        <input 
-                            type="text" 
-                            placeholder="Subject"
-                            class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
-                        />
-                    </div>
-
-                    <div class="bg-white border border-[#e1e3e8] rounded-lg h-[163px] p-4">
-                        <textarea 
-                            placeholder="Message"
-                            class="w-full h-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none resize-none"
-                        ></textarea>
-                    </div>
-
-                    <button class="bg-[#0054ff] border border-[#548cff] w-full h-14 rounded-xl flex items-center justify-center text-white font-['Rubik'] font-medium text-[16px] hover:bg-[#0046d9] transition-colors">
-                        Send Message
-                    </button>
-                </div>
+          <div class="max-w-md mx-auto">
+            <div class="text-center space-y-4 mb-12">
+              <div class="border border-[#0054ff] rounded-[14px] p-2 w-fit mx-auto">
+                <p class="font-['Rubik'] font-normal text-[10px] text-[#0054ff] text-center tracking-[-0.2px]">
+                  GET IN TOUCH
+                </p>
+              </div>
+              <h2 class="font-['Rubik'] font-semibold text-[40px] md:text-[48px] leading-[1.2] text-[#1e1e1e] tracking-[-0.96px]">
+                Take the Big Leap
+              </h2>
+              <p class="font-['Rubik'] font-normal text-[16px] leading-[1.4] text-[#1e1e1e]">
+                Let's talk about turning your next idea into something real.
+              </p>
             </div>
+            <div class="space-y-4">
+              <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
+                />
+              </div>
+              <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
+                />
+              </div>
+              <div class="bg-white border border-[#e1e3e8] rounded-lg h-14 px-4 flex items-center">
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="w-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none"
+                />
+              </div>
+              <div class="bg-white border border-[#e1e3e8] rounded-lg h-[163px] p-4">
+                <textarea
+                  placeholder="Message"
+                  class="w-full h-full font-['Rubik'] font-medium text-[16px] text-[#6c6c6c] bg-transparent border-none outline-none resize-none"
+                ></textarea>
+              </div>
+              <button class="bg-[#0054ff] border border-[#548cff] w-full h-14 rounded-xl flex items-center justify-center text-white font-['Rubik'] font-medium text-[16px] hover:bg-[#0046d9] transition-colors">
+                Send Message
+              </button>
+            </div>
+          </div>
         </div>
-    </section>
-    <div class="container">
+      </section>
+
+      <div class="container">
         <div class="field-demo w-full max-w-md">
-            <form class="field-form">
+          <form class="field-form">
+            <div class="field-group">
+              <fieldset class="field-set">
+                <legend class="field-legend">Payment Method</legend>
+                <p class="field-description">
+                  All transactions are secure and encrypted
+                </p>
                 <div class="field-group">
-                    <fieldset class="field-set">
-                        <legend class="field-legend">Payment Method</legend>
-                        <p class="field-description">All transactions are secure and encrypted</p>
-                        <div class="field-group">
-                            <div class="field">
-                                <label class="field-label" for="checkout-7j9-card-name-43j">Name on Card</label>
-                                <input class="field-input" id="checkout-7j9-card-name-43j" placeholder="Evil Rabbit" required>
-                            </div>
-                            <div class="field">
-                                <label class="field-label" for="checkout-7j9-card-number-uw1">Card Number</label>
-                                <input class="field-input" id="checkout-7j9-card-number-uw1" placeholder="1234 5678 9012 3456" required>
-                                <p class="field-description">Enter your 16-digit card number</p>
-                            </div>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="field">
-                                    <label class="field-label" for="checkout-exp-month-ts6">Month</label>
-                                    <select class="field-input field-select" id="checkout-exp-month-ts6">
-                                        <option value="">MM</option>
-                                        <option value="01">01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                        <option value="07">07</option>
-                                        <option value="08">08</option>
-                                        <option value="09">09</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                    </select>
-                                </div>
-                                <div class="field">
-                                    <label class="field-label" for="checkout-7j9-exp-year-f59">Year</label>
-                                    <select class="field-input field-select" id="checkout-7j9-exp-year-f59">
-                                        <option value="">YYYY</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2025">2025</option>
-                                        <option value="2026">2026</option>
-                                        <option value="2027">2027</option>
-                                        <option value="2028">2028</option>
-                                        <option value="2029">2029</option>
-                                    </select>
-                                </div>
-                                <div class="field">
-                                    <label class="field-label" for="checkout-7j9-cvv">CVV</label>
-                                    <input class="field-input" id="checkout-7j9-cvv" placeholder="123" required>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="field-separator"></div>
-                    <fieldset class="field-set">
-                        <legend class="field-legend">Billing Address</legend>
-                        <p class="field-description">The billing address associated with your payment method</p>
-                        <div class="field-group">
-                            <div class="field field-horizontal">
-                                <input class="field-checkbox" id="checkout-7j9-same-as-shipping-wgm" type="checkbox" checked>
-                                <label class="field-label font-normal" for="checkout-7j9-same-as-shipping-wgm">Same as shipping address</label>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset class="field-set">
-                        <div class="field-group">
-                            <div class="field">
-                                <label class="field-label" for="checkout-7j9-optional-comments">Comments</label>
-                                <textarea class="field-input field-textarea resize-none" id="checkout-7j9-optional-comments" placeholder="Add any additional comments"></textarea>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="field field-horizontal field-actions">
-                        <button class="field-button" type="submit">Submit</button>
-                        <button class="field-button field-button-outline" type="button">Cancel</button>
+                  <div class="field">
+                    <label class="field-label" for="checkout-7j9-card-name-43j">
+                      Name on Card
+                    </label>
+                    <input
+                      class="field-input"
+                      id="checkout-7j9-card-name-43j"
+                      placeholder="Evil Rabbit"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label class="field-label" for="checkout-7j9-card-number-uw1">
+                      Card Number
+                    </label>
+                    <input
+                      class="field-input"
+                      id="checkout-7j9-card-number-uw1"
+                      placeholder="1234 5678 9012 3456"
+                      required
+                    />
+                    <p class="field-description">Enter your 16-digit card number</p>
+                  </div>
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="field">
+                      <label class="field-label" for="checkout-exp-month-ts6">
+                        Month
+                      </label>
+                      <select class="field-input field-select" id="checkout-exp-month-ts6">
+                        <option value="">MM</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
                     </div>
+                    <div class="field">
+                      <label class="field-label" for="checkout-7j9-exp-year-f59">
+                        Year
+                      </label>
+                      <select class="field-input field-select" id="checkout-7j9-exp-year-f59">
+                        <option value="">YYYY</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label class="field-label" for="checkout-7j9-cvv">CVV</label>
+                      <input class="field-input" id="checkout-7j9-cvv" placeholder="123" required />
+                    </div>
+                  </div>
                 </div>
-            </form>
+              </fieldset>
+              <div class="field-separator"></div>
+              <fieldset class="field-set">
+                <legend class="field-legend">Billing Address</legend>
+                <p class="field-description">
+                  The billing address associated with your payment method
+                </p>
+                <div class="field-group">
+                  <div class="field field-horizontal">
+                    <input
+                      class="field-checkbox"
+                      id="checkout-7j9-same-as-shipping-wgm"
+                      type="checkbox"
+                      checked
+                    />
+                    <label class="field-label font-normal" for="checkout-7j9-same-as-shipping-wgm">
+                      Same as shipping address
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="field-set">
+                <div class="field-group">
+                  <div class="field">
+                    <label class="field-label" for="checkout-7j9-optional-comments">
+                      Comments
+                    </label>
+                    <textarea
+                      class="field-input field-textarea resize-none"
+                      id="checkout-7j9-optional-comments"
+                      placeholder="Add any additional comments"
+                    ></textarea>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="field field-horizontal field-actions">
+                <button class="field-button" type="submit">Submit</button>
+                <button class="field-button field-button-outline" type="button">Cancel</button>
+              </div>
+            </div>
+          </form>
         </div>
+
         <form class="contact-form">
-            <h1 class="form-title">Contact me</h1>
-            <p class="form-description">Contact me and I'll get back to you as soon as possible.</p>
-            
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">E-mail address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your e-mail address..." required>
-            </div>
-            
-            <div class="form-group">
-                <label for="category">Category</label>
-                <select id="category" name="category" required>
-                    <option value="">Choose a category</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="business">Business</option>
-                    <option value="support">Support</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" placeholder="Type your message here." required></textarea>
-            </div>
-            
-            <button type="submit" class="submit-button">Send Message</button>
+          <h1 class="form-title">Contact me</h1>
+          <p class="form-description">
+            Contact me and I'll get back to you as soon as possible.
+          </p>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name..." required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your e-mail address..." required />
+          </div>
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">Choose a category</option>
+              <option value="general">General Inquiry</option>
+              <option value="business">Business</option>
+              <option value="support">Support</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message here." required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
         </form>
-    </div>
+      </div>
 
-    <!-- Calendar Component -->
-    <div class="calendar-container">
+      <div class="calendar-container">
         <div id="calendar" class="calendar rounded-md border shadow-sm"></div>
-    </div>
-    </div>
+      </div>
 
-    <script src="js/gsap.min.js"></script>
-    <script src="js/SplitText.min.js"></script>
+      <div class="pagination">
+        <div class="pagination-content">
+          <div class="pagination-item">
+            <a class="pagination-link pagination-prev" href="#">Previous</a>
+          </div>
+          <div class="pagination-item">
+            <a class="pagination-link" href="#">1</a>
+          </div>
+          <div class="pagination-item">
+            <a class="pagination-link is-active" href="#">2</a>
+          </div>
+          <div class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </div>
+          <div class="pagination-item">
+            <span class="pagination-ellipsis">…</span>
+          </div>
+          <div class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
-        // Wait for both GSAP and SplitText to be available
-        function initGSAPAnimation() {
-            if (typeof gsap !== 'undefined' && gsap.to && typeof SplitText !== 'undefined') {
-                // Register SplitText plugin
-                gsap.registerPlugin(SplitText);
-
-                // Animate the green box with rotation
-                gsap.to(".box", {
-                    rotation: 360,
-                    duration: 2,
-                    repeat: 10,
-                    ease: "none"
-                });
-
-                // Animate the welcome text with SplitText
-                const welcomeText = document.getElementById("welcome-text");
-                if (welcomeText) {
-                    let split = SplitText.create(welcomeText, {
-                        type: "chars,words",
-                        charsClass: "char",
-                        wordsClass: "word"
-                    });
-
-                    // Animate each character
-                    gsap.from(split.chars, {
-                        y: 100,
-                        autoAlpha: 0,
-                        stagger: 0.05,
-                        duration: .25
-                    });
-                }
-            } else {
-                // Retry if libraries haven't loaded yet
-                setTimeout(initGSAPAnimation, 50);
-            }
-        }
-        
-        // Start animation when page loads
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initGSAPAnimation);
-        } else {
-            initGSAPAnimation();
-        }
-    </script>
-
-    <script>
-        // Calendar Component
-        class CalendarDemo {
-            constructor(containerId) {
-                this.container = document.getElementById(containerId);
-                this.selectedDate = new Date();
-                this.currentMonth = this.selectedDate.getMonth();
-                this.currentYear = this.selectedDate.getFullYear();
-                this.monthNames = [
-                    "January", "February", "March", "April", "May", "June",
-                    "July", "August", "September", "October", "November", "December"
-                ];
-                this.dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-                this.init();
-            }
-
-            init() {
-                this.render();
-            }
-
-            render() {
-                const firstDay = new Date(this.currentYear, this.currentMonth, 1).getDay();
-                const daysInMonth = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
-                const daysInPrevMonth = new Date(this.currentYear, this.currentMonth, 0).getDate();
-
-                let html = `
-                    <div class="calendar-header">
-                        <div class="calendar-nav">
-                            <select id="calendar-month" class="calendar-select">
-                                ${this.monthNames.map((month, idx) => 
-                                    `<option value="${idx}" ${idx === this.currentMonth ? 'selected' : ''}>${month}</option>`
-                                ).join('')}
-                            </select>
-                            <select id="calendar-year" class="calendar-select">
-                                ${Array.from({length: 100}, (_, i) => {
-                                    const year = this.currentYear - 50 + i;
-                                    return `<option value="${year}" ${year === this.currentYear ? 'selected' : ''}>${year}</option>`;
-                                }).join('')}
-                            </select>
-                        </div>
-                    </div>
-                    <div class="calendar-body">
-                        <div class="calendar-weekdays">
-                            ${this.dayNames.map(day => `<div class="calendar-weekday">${day}</div>`).join('')}
-                        </div>
-                        <div class="calendar-days">
-                `;
-
-                // Previous month's trailing days
-                for (let i = firstDay - 1; i >= 0; i--) {
-                    const day = daysInPrevMonth - i;
-                    html += `<div class="calendar-day calendar-day-other">${day}</div>`;
-                }
-
-                // Current month's days
-                for (let day = 1; day <= daysInMonth; day++) {
-                    const date = new Date(this.currentYear, this.currentMonth, day);
-                    const isSelected = this.isSameDate(date, this.selectedDate);
-                    const isToday = this.isSameDate(date, new Date());
-                    html += `
-                        <div class="calendar-day ${isSelected ? 'calendar-day-selected' : ''} ${isToday ? 'calendar-day-today' : ''}" 
-                             data-date="${date.toISOString()}">
-                            ${day}
-                        </div>
-                    `;
-                }
-
-                // Next month's leading days
-                const totalCells = 42; // 6 weeks × 7 days
-                const remainingCells = totalCells - (firstDay + daysInMonth);
-                for (let day = 1; day <= remainingCells; day++) {
-                    html += `<div class="calendar-day calendar-day-other">${day}</div>`;
-                }
-
-                html += `
-                        </div>
-                    </div>
-                `;
-
-                this.container.innerHTML = html;
-
-                // Add event listeners
-                document.getElementById('calendar-month').addEventListener('change', (e) => {
-                    this.currentMonth = parseInt(e.target.value);
-                    this.render();
-                });
-
-                document.getElementById('calendar-year').addEventListener('change', (e) => {
-                    this.currentYear = parseInt(e.target.value);
-                    this.render();
-                });
-
-                // Add click listeners to days
-                this.container.querySelectorAll('.calendar-day:not(.calendar-day-other)').forEach(day => {
-                    day.addEventListener('click', () => {
-                        const dateStr = day.getAttribute('data-date');
-                        if (dateStr) {
-                            this.selectedDate = new Date(dateStr);
-                            this.render();
-                        }
-                    });
-                });
-            }
-
-            isSameDate(date1, date2) {
-                return date1.getFullYear() === date2.getFullYear() &&
-                       date1.getMonth() === date2.getMonth() &&
-                       date1.getDate() === date2.getDate();
-            }
+      class CalendarDemo {
+        constructor(containerId) {
+          this.container = document.getElementById(containerId);
+          this.selectedDate = new Date();
+          this.currentMonth = this.selectedDate.getMonth();
+          this.currentYear = this.selectedDate.getFullYear();
+          this.monthNames = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ];
+          this.dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+          this.init();
         }
 
-        // Initialize calendar when DOM is ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', () => {
-                new CalendarDemo('calendar');
+        init() {
+          this.render();
+        }
+
+        render() {
+          const firstDay = new Date(this.currentYear, this.currentMonth, 1).getDay();
+          const daysInMonth = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
+          const daysInPrevMonth = new Date(this.currentYear, this.currentMonth, 0).getDate();
+
+          let html = `
+            <div class="calendar-header">
+              <div class="calendar-nav">
+                <select id="calendar-month" class="calendar-select">
+                  ${this.monthNames
+                    .map(
+                      (month, idx) =>
+                        `<option value="${idx}" ${idx === this.currentMonth ? "selected" : ""}>${month}</option>`
+                    )
+                    .join("")}
+                </select>
+                <select id="calendar-year" class="calendar-select">
+                  ${Array.from({ length: 100 }, (_, i) => {
+                    const year = this.currentYear - 50 + i;
+                    return `<option value="${year}" ${year === this.currentYear ? "selected" : ""}>${year}</option>`;
+                  }).join("")}
+                </select>
+              </div>
+            </div>
+            <div class="calendar-body">
+              <div class="calendar-weekdays">
+                ${this.dayNames.map((day) => `<div class="calendar-weekday">${day}</div>`).join("")}
+              </div>
+              <div class="calendar-days">
+          `;
+
+          for (let i = firstDay - 1; i >= 0; i--) {
+            const day = daysInPrevMonth - i;
+            html += `<div class="calendar-day calendar-day-other">${day}</div>`;
+          }
+
+          for (let day = 1; day <= daysInMonth; day++) {
+            const date = new Date(this.currentYear, this.currentMonth, day);
+            const isSelected = this.isSameDate(date, this.selectedDate);
+            const isToday = this.isSameDate(date, new Date());
+            html += `
+              <div class="calendar-day ${isSelected ? "calendar-day-selected" : ""} ${isToday ? "calendar-day-today" : ""}" data-date="${date.toISOString()}">
+                ${day}
+              </div>
+            `;
+          }
+
+          const totalCells = 42;
+          const remainingCells = totalCells - (firstDay + daysInMonth);
+          for (let day = 1; day <= remainingCells; day++) {
+            html += `<div class="calendar-day calendar-day-other">${day}</div>`;
+          }
+
+          html += `
+              </div>
+            </div>
+          `;
+
+          this.container.innerHTML = html;
+
+          document.getElementById("calendar-month").addEventListener("change", (e) => {
+            this.currentMonth = parseInt(e.target.value);
+            this.render();
+          });
+
+          document.getElementById("calendar-year").addEventListener("change", (e) => {
+            this.currentYear = parseInt(e.target.value);
+            this.render();
+          });
+
+          this.container
+            .querySelectorAll(".calendar-day:not(.calendar-day-other)")
+            .forEach((day) => {
+              day.addEventListener("click", () => {
+                const dateStr = day.getAttribute("data-date");
+                if (dateStr) {
+                  this.selectedDate = new Date(dateStr);
+                  this.render();
+                }
+              });
             });
-        } else {
-            new CalendarDemo('calendar');
         }
+
+        isSameDate(date1, date2) {
+          return (
+            date1.getFullYear() === date2.getFullYear() &&
+            date1.getMonth() === date2.getMonth() &&
+            date1.getDate() === date2.getDate()
+          );
+        }
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () => {
+          new CalendarDemo("calendar");
+        });
+      } else {
+        new CalendarDemo("calendar");
+      }
     </script>
-</body>
+  </body>
 </html>
