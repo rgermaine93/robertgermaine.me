@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var k = "kartee-theme";
+        var t = localStorage.getItem(k);
+        var h = document.documentElement;
+        h.classList.remove("light", "dark");
+        if (t === "dark") h.classList.add("dark");
+        else if (t === "light") h.classList.add("light");
+      })();
+    </script>
+    <title>Contact — Get in Touch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body class="is-contact-page">
+    <main class="page-main page-contact" id="main-content">
+      <div class="contact-page-shell">
+        <header class="nav-section">
+          <nav class="navbar-22" aria-label="Main navigation">
+            <div class="navbar-inner">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  class="navbar-logo"
+                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <span class="navbar-title">Shadcnblocks.com</span>
+              </a>
+
+              <div class="navbar-links-desktop">
+                <a class="nav-link-animated" href="index.html">
+                  <span class="nav-link-label">Home</span>
+                  <span class="nav-link-hover" aria-hidden="true">Home</span>
+                </a>
+                <a class="nav-link-animated" href="index.html#projects">
+                  <span class="nav-link-label">Projects</span>
+                  <span class="nav-link-hover" aria-hidden="true">Projects</span>
+                </a>
+                <a class="nav-link-animated" href="index.html#pricing">
+                  <span class="nav-link-label">Pricing</span>
+                  <span class="nav-link-hover" aria-hidden="true">Pricing</span>
+                </a>
+                <a class="nav-link-animated" href="contact.html" aria-current="page">
+                  <span class="nav-link-label">Contact</span>
+                  <span class="nav-link-hover" aria-hidden="true">Contact</span>
+                </a>
+              </div>
+
+              <div class="navbar-meta" aria-live="polite">
+                <div class="theme-toggle" title="Color theme">
+                  <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" />
+                    </svg>
+                  </span>
+                  <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle-input" role="switch" aria-label="Dark mode" />
+                    <span class="theme-switch-track" aria-hidden="true">
+                      <span class="theme-switch-thumb"></span>
+                    </span>
+                  </label>
+                  <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                    </svg>
+                  </span>
+                </div>
+                <span class="font-medium">Greenville, SC</span>
+                <span class="navbar-meta-sep">/</span>
+                <span class="navbar-meta-time" data-nav-time>—</span>
+              </div>
+
+              <button
+                type="button"
+                class="nav-menu-toggle"
+                id="nav-menu-toggle"
+                aria-expanded="false"
+                aria-controls="nav-mobile-panel"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="4" x2="20" y1="12" y2="12" />
+                  <line x1="4" x2="20" y1="6" y2="6" />
+                  <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+                <span class="sr-only">Open menu</span>
+              </button>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Contact21 — static port (react-hook-form + zod → vanilla JS) -->
+        <section class="contact-21" id="contact" aria-labelledby="contact-heading">
+          <div class="site-container">
+            <div class="contact-21-grid">
+              <div class="contact-21-left">
+                <p class="contact-21-quote">
+                  We are a team of creators, thinkers, and builders who believe in crafting experiences that truly
+                  connect.
+                  <span class="contact-21-quote-accent">We're here to help</span>
+                </p>
+                <div class="contact-21-profile">
+                  <img
+                    src="images/avatar.jpg"
+                    class="contact-21-avatar"
+                    width="48"
+                    height="48"
+                    alt=""
+                  />
+                  <div>
+                    <h2 class="contact-21-name">Rob</h2>
+                    <p class="contact-21-role">UI/UX Designer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-21-right">
+                <h1 class="contact-21-title" id="contact-heading">Get in Touch</h1>
+
+                <div id="contact-success" class="contact-21-success" role="status" aria-live="polite" hidden>
+                  <p class="contact-21-success-text">Thank you! We'll be in touch soon.</p>
+                </div>
+
+                <form id="contact-form" class="contact-21-form" novalidate>
+                  <div class="contact-21-field">
+                    <label for="contact-name" class="sr-only">Name</label>
+                    <input
+                      class="contact-21-input"
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      autocomplete="name"
+                      placeholder="Name*"
+                      aria-describedby="contact-name-error"
+                    />
+                    <p id="contact-name-error" class="contact-21-error" role="alert" hidden></p>
+                  </div>
+
+                  <div class="contact-21-field">
+                    <label for="contact-email" class="sr-only">Email</label>
+                    <input
+                      class="contact-21-input"
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="Email*"
+                      aria-describedby="contact-email-error"
+                    />
+                    <p id="contact-email-error" class="contact-21-error" role="alert" hidden></p>
+                  </div>
+
+                  <div class="contact-21-field">
+                    <label for="contact-message" class="sr-only">Message</label>
+                    <textarea
+                      class="contact-21-input contact-21-input--message"
+                      id="contact-message"
+                      name="message"
+                      rows="3"
+                      placeholder="Message (Tell us about your project)"
+                      aria-describedby="contact-message-error"
+                    ></textarea>
+                    <p id="contact-message-error" class="contact-21-error" role="alert" hidden></p>
+                  </div>
+
+                  <p id="contact-root-error" class="contact-21-error contact-21-error--root" role="alert" hidden></p>
+
+                  <button type="submit" class="contact-21-submit" id="contact-submit">
+                    <span class="contact-21-btn-label">
+                      <svg class="contact-21-btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m15 18 6-6-6-6" />
+                        <path d="M4 6v12a2 2 0 0 0 2 2h7" />
+                      </svg>
+                      Get in touch
+                    </span>
+                    <span class="contact-21-btn-loading" aria-hidden="true">
+                      <svg class="contact-21-btn-icon contact-21-spinner" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                      </svg>
+                      Sending...
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer-27" id="site-footer">
+      <div class="site-container">
+        <div class="footer-27-top">
+          <div class="footer-27-col footer-27-col-main">
+            <div class="footer-27-intro">
+              <h2 class="footer-27-heading">Connect with Me</h2>
+              <p class="footer-27-lede">
+                No commitments. Just a quick chat to see if we click.
+              </p>
+            </div>
+            <a class="btn btn-lg footer-27-cta" href="mailto:hello@robertgermaine.me">Get in Touch</a>
+          </div>
+          <div class="footer-27-col footer-27-col-social" aria-label="Social links">
+            <ul class="footer-27-social-list">
+              <li>
+                <a class="footer-27-social-link" href="#" target="_blank" rel="noopener noreferrer">
+                  <span class="footer-27-social-name">Instagram</span>
+                  <span class="footer-27-social-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="footer-27-social-link" href="#" target="_blank" rel="noopener noreferrer">
+                  <span class="footer-27-social-name">X (Twitter)</span>
+                  <span class="footer-27-social-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-27-sep" role="separator"></div>
+
+        <div class="footer-27-bottom">
+          <p class="footer-27-copy">© Copyright 2025. All rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="nav-mobile-panel"
+      id="nav-mobile-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menu"
+      aria-hidden="true"
+    >
+      <div class="nav-mobile-panel-wrap">
+        <button type="button" class="nav-mobile-close" id="nav-mobile-close" aria-label="Close menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="nav-mobile-inner">
+          <a class="nav-mobile-brand" href="index.html">
+            <img
+              class="navbar-logo"
+              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
+              width="40"
+              height="40"
+              alt=""
+            />
+            <span>Shadcnblocks.com</span>
+          </a>
+          <nav class="nav-mobile-links" aria-label="Mobile">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#pricing">Pricing</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+          </nav>
+          <div class="nav-mobile-footer">
+            <div class="theme-toggle theme-toggle-mobile" title="Color theme">
+              <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </span>
+              <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle-input-mobile" role="switch" aria-label="Dark mode" />
+                <span class="theme-switch-track" aria-hidden="true">
+                  <span class="theme-switch-thumb"></span>
+                </span>
+              </label>
+              <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>
+              </span>
+            </div>
+            <div class="font-medium">Greenville, SC</div>
+            <div class="navbar-meta-time" data-nav-time>—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/theme.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/contact-form.js" defer></script>
+  </body>
+</html>

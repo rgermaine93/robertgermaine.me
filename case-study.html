@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var k = "kartee-theme";
+        var t = localStorage.getItem(k);
+        var h = document.documentElement;
+        h.classList.remove("light", "dark");
+        if (t === "dark") h.classList.add("dark");
+        else if (t === "light") h.classList.add("light");
+      })();
+    </script>
+    <title>Case study — Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <main class="page-main page-case-study" id="main-content">
+      <div class="case-study-shell">
+        <header class="nav-section">
+          <nav class="navbar-22" aria-label="Main navigation">
+            <div class="navbar-inner">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  class="navbar-logo"
+                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <span class="navbar-title">Shadcnblocks.com</span>
+              </a>
+
+              <div class="navbar-links-desktop">
+                <a class="nav-link-animated" href="index.html">
+                  <span class="nav-link-label">Home</span>
+                  <span class="nav-link-hover" aria-hidden="true">Home</span>
+                </a>
+                <a class="nav-link-animated" href="index.html#projects">
+                  <span class="nav-link-label">Projects</span>
+                  <span class="nav-link-hover" aria-hidden="true">Projects</span>
+                </a>
+                <a class="nav-link-animated" href="index.html#experience">
+                  <span class="nav-link-label">Experience</span>
+                  <span class="nav-link-hover" aria-hidden="true">Experience</span>
+                </a>
+                <a class="nav-link-animated" href="contact.html">
+                  <span class="nav-link-label">Contact</span>
+                  <span class="nav-link-hover" aria-hidden="true">Contact</span>
+                </a>
+              </div>
+
+              <div class="navbar-meta" aria-live="polite">
+                <div class="theme-toggle" title="Color theme">
+                  <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" />
+                    </svg>
+                  </span>
+                  <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle-input" role="switch" aria-label="Dark mode" />
+                    <span class="theme-switch-track" aria-hidden="true">
+                      <span class="theme-switch-thumb"></span>
+                    </span>
+                  </label>
+                  <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                    </svg>
+                  </span>
+                </div>
+                <span class="font-medium">Greenville, SC</span>
+                <span class="navbar-meta-sep">/</span>
+                <span class="navbar-meta-time" data-nav-time>—</span>
+              </div>
+
+              <button
+                type="button"
+                class="nav-menu-toggle"
+                id="nav-menu-toggle"
+                aria-expanded="false"
+                aria-controls="nav-mobile-panel"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="4" x2="20" y1="12" y2="12" />
+                  <line x1="4" x2="20" y1="6" y2="6" />
+                  <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+                <span class="sr-only">Open menu</span>
+              </button>
+            </div>
+          </nav>
+        </header>
+
+        <!-- CaseStudy3 — static port -->
+        <section class="case-study-3" aria-labelledby="case-study-title">
+          <div class="site-container">
+            <div class="case-study-3-hero">
+              <div class="case-study-3-hero-text">
+                <nav class="case-study-breadcrumb" aria-label="Breadcrumb">
+                  <ol class="case-study-breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="case-study-breadcrumb-sep" aria-hidden="true">/</li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li class="case-study-breadcrumb-sep" aria-hidden="true">/</li>
+                    <li><span aria-current="page">Case study</span></li>
+                  </ol>
+                </nav>
+                <h1 class="case-study-3-title" id="case-study-title">
+                  How this tool helps teams achieve efficient workflows
+                </h1>
+                <div class="case-study-3-hero-meta">
+                  <p class="case-study-3-hero-meta-label">Featuring insights from:</p>
+                  <div class="case-study-3-hero-profile">
+                    <img
+                      class="case-study-3-hero-avatar"
+                      src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
+                      width="64"
+                      height="64"
+                      alt=""
+                    />
+                    <div>
+                      <p class="case-study-3-hero-name">Jane Doe</p>
+                      <p class="case-study-3-hero-role">Senior Product Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="case-study-3-hero-img"
+                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="case-study-3-body">
+              <aside class="case-study-3-aside">
+                <img
+                  class="case-study-3-aside-logo"
+                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
+                  alt="Logo"
+                />
+                <div class="case-study-3-meta-grid">
+                  <div class="case-study-3-meta-span2">
+                    <h2 class="case-study-3-meta-h">Overview</h2>
+                    <p class="case-study-3-meta-p">
+                      A modern platform designed to simplify workflows, automate processes, and drive innovation at scale.
+                      It is the central foundation for product and customer data, on top of which high impact workflows
+                      are built.
+                    </p>
+                  </div>
+                  <div>
+                    <h2 class="case-study-3-meta-h">Sector</h2>
+                    <p class="case-study-3-meta-p">Technology; Automation</p>
+                  </div>
+                  <div>
+                    <h2 class="case-study-3-meta-h">Team size</h2>
+                    <p class="case-study-3-meta-p">10-100</p>
+                  </div>
+                  <div>
+                    <h2 class="case-study-3-meta-h">Location</h2>
+                    <p class="case-study-3-meta-p">San Francisco, California</p>
+                  </div>
+                  <div>
+                    <h2 class="case-study-3-meta-h">Established</h2>
+                    <p class="case-study-3-meta-p">2020</p>
+                  </div>
+                  <div>
+                    <h2 class="case-study-3-meta-h">Funding</h2>
+                    <p class="case-study-3-meta-p">$25m (Series A)</p>
+                  </div>
+                  <div>
+                    <h2 class="case-study-3-meta-h">Core features</h2>
+                    <p class="case-study-3-meta-p">Dashboards Tools API integration</p>
+                  </div>
+                </div>
+                <div class="case-study-3-share">
+                  <span class="case-study-3-share-label">Share this content:</span>
+                  <div class="case-study-3-share-icons">
+                    <a href="#" class="case-study-3-share-link" aria-label="LinkedIn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                      </svg>
+                    </a>
+                    <a href="#" class="case-study-3-share-link" aria-label="Twitter">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                      </svg>
+                    </a>
+                    <a href="#" class="case-study-3-share-link" aria-label="Facebook">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+
+              <div class="case-study-3-main-wrap">
+                <div class="case-study-3-main">
+                  <div class="case-study-3-pao">
+                    <div class="case-study-3-pao-item">
+                      <h2 class="case-study-3-pao-h">Problem</h2>
+                      <p class="case-study-3-pao-p">
+                        The team faced difficulties aligning their growth strategy with a rigid data model, causing
+                        inefficiencies and limited access to essential customer insights.
+                      </p>
+                    </div>
+                    <div class="case-study-3-pao-sep" role="separator"></div>
+                    <div class="case-study-3-pao-item">
+                      <h2 class="case-study-3-pao-h">Approach</h2>
+                      <p class="case-study-3-pao-p">
+                        Adopted a flexible platform as the central hub for data, enabling the creation of impactful
+                        workflows to drive growth.
+                      </p>
+                    </div>
+                    <div class="case-study-3-pao-outcomes">
+                      <h2 class="case-study-3-pao-h">Outcomes</h2>
+                      <ul class="case-study-3-outcomes-list">
+                        <li>
+                          <svg class="case-study-3-check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.17" />
+                            <path d="m9 12 2 2 4-4" />
+                          </svg>
+                          <p>A streamlined system that accelerates their growth initiatives</p>
+                        </li>
+                        <li>
+                          <svg class="case-study-3-check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.17" />
+                            <path d="m9 12 2 2 4-4" />
+                          </svg>
+                          <p>A customizable CRM that mirrors their data and integrates seamlessly with their tools</p>
+                        </li>
+                        <li>
+                          <svg class="case-study-3-check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.17" />
+                            <path d="m9 12 2 2 4-4" />
+                          </svg>
+                          <p>A scalable, collaborative solution that grows alongside their business</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="case-study-3-article">
+                    <section id="section1" class="case-study-prose">
+                      <h2>The King&apos;s Plan</h2>
+                      <p>
+                        The king thought long and hard, and finally came up with
+                        <a href="#">a brilliant plan</a>: he would tax the jokes in the kingdom.
+                      </p>
+                      <blockquote>
+                        <p>
+                          &ldquo;After all,&rdquo; he said, &ldquo;everyone enjoys a good joke, so it&apos;s only fair that
+                          they should pay for the privilege.&rdquo;
+                        </p>
+                      </blockquote>
+                    </section>
+
+                    <section id="section2" class="case-study-prose">
+                      <h2>The Joke Tax</h2>
+                      <p>
+                        The king&apos;s subjects were not amused. They grumbled and complained, but the king was firm:
+                      </p>
+                      <ul>
+                        <li>1st level of puns: 5 gold coins</li>
+                        <li>2nd level of jokes: 10 gold coins</li>
+                        <li>3rd level of one-liners : 20 gold coins</li>
+                      </ul>
+                      <p>
+                        As a result, people stopped telling jokes, and the kingdom fell into a gloom. But there was one
+                        person who refused to let the king&apos;s foolishness get him down: a court jester named Jokester.
+                      </p>
+                    </section>
+
+                    <section id="section3" class="case-study-prose">
+                      <h2>Jokester's Revolt</h2>
+                      <p>
+                        Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the
+                        place: under the king&apos;s pillow, in his soup, even in the royal toilet. The king was furious,
+                        but he couldn&apos;t seem to stop Jokester.
+                      </p>
+                      <p>
+                        And then, one day, the people of the kingdom discovered that the jokes left by Jokester were so
+                        funny that they couldn&apos;t help but laugh. And once they started laughing, they couldn&apos;t
+                        stop.
+                      </p>
+                    </section>
+
+                    <section id="section4" class="case-study-prose">
+                      <h2>The People&apos;s Rebellion</h2>
+                      <p>
+                        The people of the kingdom, feeling uplifted by the laughter, started to tell jokes and puns again,
+                        and soon the entire kingdom was in on the joke.
+                      </p>
+                      <div class="case-study-3-table-wrap">
+                        <table class="case-study-3-table">
+                          <thead>
+                            <tr>
+                              <th>King&apos;s Treasury</th>
+                              <th>People&apos;s happiness</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Empty</td>
+                              <td>Overflowing</td>
+                            </tr>
+                            <tr>
+                              <td>Modest</td>
+                              <td>Satisfied</td>
+                            </tr>
+                            <tr>
+                              <td>Full</td>
+                              <td>Ecstatic</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p>
+                        The king, seeing how much happier his subjects were, realized the error of his ways and repealed
+                        the joke tax. Jokester was declared a hero, and the kingdom lived happily ever after.
+                      </p>
+                      <div class="case-study-3-alert" role="alert">
+                        <svg class="case-study-3-alert-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                          <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                          <path d="M9 18h6" />
+                          <path d="M10 22h4" />
+                        </svg>
+                        <div>
+                          <p class="case-study-3-alert-title">Royal Decree!</p>
+                          <p class="case-study-3-alert-desc">
+                            Remember, all jokes must be registered at the Royal Jest Office before telling them
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+
+                <aside class="case-study-3-toc" aria-label="On this page">
+                  <span class="case-study-3-toc-heading">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <line x1="3" x2="21" y1="6" y2="6" />
+                      <line x1="3" x2="15" y1="12" y2="12" />
+                      <line x1="3" x2="18" y1="18" y2="18" />
+                    </svg>
+                    On this page
+                  </span>
+                  <nav class="case-study-toc">
+                    <ul>
+                      <li>
+                        <a class="case-study-toc-link" href="#section1">The King&apos;s Plan</a>
+                      </li>
+                      <li>
+                        <a class="case-study-toc-link" href="#section2">The Joke Tax</a>
+                      </li>
+                      <li>
+                        <a class="case-study-toc-link" href="#section3">Jokester&apos;s Revolt</a>
+                      </li>
+                      <li>
+                        <a class="case-study-toc-link" href="#section4">The People&apos;s Rebellion</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer-27" id="site-footer">
+      <div class="site-container">
+        <div class="footer-27-top">
+          <div class="footer-27-col footer-27-col-main">
+            <div class="footer-27-intro">
+              <h2 class="footer-27-heading">Connect with Me</h2>
+              <p class="footer-27-lede">
+                No commitments. Just a quick chat to see if we click.
+              </p>
+            </div>
+            <a class="btn btn-lg footer-27-cta" href="contact.html">Get in Touch</a>
+          </div>
+          <div class="footer-27-col footer-27-col-social" aria-label="Social links">
+            <ul class="footer-27-social-list">
+              <li>
+                <a class="footer-27-social-link" href="#" target="_blank" rel="noopener noreferrer">
+                  <span class="footer-27-social-name">Instagram</span>
+                  <span class="footer-27-social-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="footer-27-social-link" href="#" target="_blank" rel="noopener noreferrer">
+                  <span class="footer-27-social-name">X (Twitter)</span>
+                  <span class="footer-27-social-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-27-sep" role="separator"></div>
+
+        <div class="footer-27-bottom">
+          <p class="footer-27-copy">© Copyright 2025. All rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="nav-mobile-panel"
+      id="nav-mobile-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menu"
+      aria-hidden="true"
+    >
+      <div class="nav-mobile-panel-wrap">
+        <button type="button" class="nav-mobile-close" id="nav-mobile-close" aria-label="Close menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="nav-mobile-inner">
+          <a class="nav-mobile-brand" href="index.html">
+            <img
+              class="navbar-logo"
+              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
+              width="40"
+              height="40"
+              alt=""
+            />
+            <span>Shadcnblocks.com</span>
+          </a>
+          <nav class="nav-mobile-links" aria-label="Mobile">
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="nav-mobile-footer">
+            <div class="theme-toggle theme-toggle-mobile" title="Color theme">
+              <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </span>
+              <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle-input-mobile" role="switch" aria-label="Dark mode" />
+                <span class="theme-switch-track" aria-hidden="true">
+                  <span class="theme-switch-thumb"></span>
+                </span>
+              </label>
+              <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>
+              </span>
+            </div>
+            <div class="font-medium">Greenville, SC</div>
+            <div class="navbar-meta-time" data-nav-time>—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/theme.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/case-study.js" defer></script>
+  </body>
+</html>
