@@ -1519,12 +1519,20 @@ body.nav-mobile-open {
   display: block;
   min-height: 18rem; /* min-h-72 */
   padding: 3.5rem 1.25rem;
+  background-color: #1a1a1a;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-decoration: none;
-  color: inherit;
   overflow: hidden;
+}
+
+.projects-18-card,
+.projects-18-card:link,
+.projects-18-card:visited,
+.projects-18-card:hover,
+.projects-18-card:active {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media (min-width: 1024px) {
@@ -1539,15 +1547,20 @@ body.nav-mobile-open {
   z-index: 0;
   background: rgb(0 0 0 / 0.8);
   backdrop-filter: blur(2px);
-  transition:
-    background 0.3s ease,
-    backdrop-filter 0.3s ease;
   pointer-events: none;
 }
 
-.projects-18-card:hover .projects-18-overlay {
-  background: rgb(0 0 0 / 0.5);
-  backdrop-filter: none;
+@media (hover: hover) {
+  .projects-18-overlay {
+    transition:
+      background 0.3s ease,
+      backdrop-filter 0.3s ease;
+  }
+
+  .projects-18-card:hover .projects-18-overlay {
+    background: rgb(0 0 0 / 0.5);
+    backdrop-filter: none;
+  }
 }
 
 .projects-18-card-inner {
@@ -1556,12 +1569,17 @@ body.nav-mobile-open {
   display: flex;
   flex-direction: column;
   gap: 1.75rem; /* gap-7 */
-  color: color-mix(in srgb, white 80%, transparent);
-  transition: color 0.3s ease;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.projects-18-card:hover .projects-18-card-inner {
-  color: #fff;
+@media (hover: hover) {
+  .projects-18-card-inner {
+    transition: color 0.3s ease;
+  }
+
+  .projects-18-card:hover .projects-18-card-inner {
+    color: #fff;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1631,24 +1649,32 @@ body.nav-mobile-open {
 
 .projects-18-reveal {
   margin-top: 0.625rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.projects-18-card:hover .projects-18-reveal {
-  max-height: 4rem;
 }
 
 .projects-18-reveal-inner {
   display: block;
   padding-top: 0.25rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
-.projects-18-card:hover .projects-18-reveal-inner {
-  opacity: 1;
+@media (hover: hover) {
+  .projects-18-reveal {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .projects-18-card:hover .projects-18-reveal {
+    max-height: 4rem;
+  }
+
+  .projects-18-reveal-inner {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .projects-18-card:hover .projects-18-reveal-inner {
+    opacity: 1;
+  }
 }
 
 /* "View project" — outline on dark (Button outline dark) */
@@ -1675,14 +1701,6 @@ body.nav-mobile-open {
   .projects-18-reveal,
   .projects-18-reveal-inner {
     transition: none;
-  }
-
-  .projects-18-card:hover .projects-18-reveal {
-    max-height: none;
-  }
-
-  .projects-18-reveal-inner {
-    opacity: 1;
   }
 }
 
