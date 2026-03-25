@@ -28,7 +28,7 @@
 
   function syncCheckboxes() {
     const on = effectiveIsDark();
-    document.querySelectorAll("#theme-toggle-input, #theme-toggle-input-mobile").forEach((el) => {
+    document.querySelectorAll("#theme-toggle-input, #theme-toggle-input-mobile, #theme-toggle-input-bar").forEach((el) => {
       el.checked = on;
       el.setAttribute("aria-checked", on ? "true" : "false");
     });
@@ -47,9 +47,8 @@
   }
 
   function init() {
-    const desktop = document.getElementById("theme-toggle-input");
-    const mobile = document.getElementById("theme-toggle-input-mobile");
-    if (!desktop && !mobile) {
+    const toggles = document.querySelectorAll("#theme-toggle-input, #theme-toggle-input-mobile, #theme-toggle-input-bar");
+    if (!toggles.length) {
       return;
     }
 
@@ -60,12 +59,7 @@
       setDark(e.target.checked);
     }
 
-    if (desktop) {
-      desktop.addEventListener("change", onChange);
-    }
-    if (mobile) {
-      mobile.addEventListener("change", onChange);
-    }
+    toggles.forEach((el) => el.addEventListener("change", onChange));
 
     window.addEventListener("storage", (e) => {
       if (e.key !== STORAGE_KEY || e.storageArea !== localStorage) {
