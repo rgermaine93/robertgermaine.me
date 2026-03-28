@@ -189,12 +189,19 @@ body {
   width: 100%;
 }
 
-/* Navbar22 — static port */
+/* Navbar22 — sticky, hides on scroll down, shows on scroll up */
 .nav-section {
-  position: relative;
-  z-index: 3;
+  position: sticky;
+  top: 0;
+  z-index: 50;
   width: 100%;
   padding: 1rem 0;
+  background: var(--background);
+  transition: transform 0.3s ease;
+}
+
+.nav-section.nav-hidden {
+  transform: translateY(-100%);
 }
 
 .navbar-22 {

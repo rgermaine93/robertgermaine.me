@@ -68,4 +68,25 @@
   mq.addEventListener("change", () => {
     if (mq.matches) closeMenu();
   });
+
+  // Hide navbar on scroll down, show on scroll up
+  var navSection = document.querySelector(".nav-section");
+  if (navSection) {
+    var lastScrollY = window.scrollY;
+    var scrollThreshold = 10;
+
+    function onScroll() {
+      var currentY = window.scrollY;
+      if (panel && panel.classList.contains("is-open")) return;
+
+      if (currentY > lastScrollY && currentY > 80 && currentY - lastScrollY > scrollThreshold) {
+        navSection.classList.add("nav-hidden");
+      } else if (lastScrollY - currentY > scrollThreshold) {
+        navSection.classList.remove("nav-hidden");
+      }
+      lastScrollY = currentY;
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 })();
